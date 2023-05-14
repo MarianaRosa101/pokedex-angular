@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="conteudo {{ pokemon.types[0].type.name }}">
+
+                <!-- Botões para navegação -->
+
+                <div class="button">
+                <div class="Back">
+                        <button (click)="Back()">
+                        <i class="bi bi-arrow-left-short"></i>Voltar
+                        </button>
+                </div>
+                <div class="Next">
+                        <button (click)="Next()">
+                        <i class="bi bi-arrow-right-short"></i>Próximo 
+                        </button>
+                </div>
+                </div>
+            
+                <!-- Informações sobre o Pokemon -->
+
+                <div class="content-pokemon">
+                <h1 class="text-center text-capitalize mt-2">{{ pokemon.name }}</h1>
+                <div class="id">
+                    <p>#{{ pokemon.id | number:'3.0-4' }}</p>
+                </div>
+
+                <div class="imagem">
+                    <img src="{{ getPokemonPhoto() }}" alt="{{ pokemon.name }} image">
+                </div>
+
+                <div class="info">
+                    <div class="height">
+                    Altura: {{ height | number:'.1-1' }} M&nbsp;
+                    Peso: {{ weight | number:'.1-1' }} Kg
+                    </div>
+                </div>
+
+                <div>
+                    <div class="type-list">
+
+                    <!-- Loop para exibir os tipos do Pokemon -->
+                    
+                    <div class="type-box" *ngFor="let type of pokemon.types">
+                        <p class="type {{ type.type.name }}">{{ type.type.name }}</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            
+                <!-- Lista de estatísticas do Pokemon -->
+                <ul>
+                <!-- Loop para exibir as estatísticas do Pokemon -->
+                <li *ngFor="let status of pokemon.stats" class="status-poke">
+                    <p class="name-status text-center text-capitalize">{{ status.stat.name }}&nbsp;</p>
+                    <div class="ataques">
+                    <p>{{ status.base_stat }}&nbsp;</p>
+                    <progress class="progress {{ pokemon.types[0].type.name }}" max="150"
+                                value="{{ status.base_stat }}">&nbsp;</progress>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,288 @@
+
+.conteudo {
+    background-color: #635656;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .conteudo.grass {
+    background-color: #9bcc50;
+  }
+  
+  .conteudo.fire {
+    background-color: #fd7d24;
+  }
+  
+  .conteudo.water {
+    background-color: #4592c4;
+  }
+  
+  .conteudo.electric {
+    background-color: #eed535;
+  }
+  
+  .conteudo.rock {
+    background-color: #a38c21;
+  }
+  
+  .conteudo.fighting {
+    background-color: #d56723;
+  }
+  
+  .conteudo.poison {
+    background-color: #b97fc9;
+  }
+  
+  .conteudo.ground {
+    background-color: #ab9842;
+  }
+  
+  .conteudo.psychic {
+    background-color: #f366b9;
+  }
+  
+  .conteudo.ice {
+    background-color: #51c4e7;
+  }
+  
+  .conteudo.bug {
+    background-color: #729f3f;
+  }
+  
+  .conteudo.dragon {
+    background-color: #7038f8;
+  }
+  
+  .conteudo.ghost {
+    background-color: #7b62a3;
+  }
+  
+  .conteudo.dark {
+    background-color: #707070;
+  }
+  
+  .conteudo.steel {
+    background-color: #9eb7b8;
+  }
+  
+  .conteudo.fairy {
+    background-color: #fdb9e9;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .button button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1a416b;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button button:hover {
+    background-color:#1a416b;
+  }
+  
+  .Back button {
+    margin-right: auto;
+  }
+  
+  .Next button {
+    margin-left: auto;
+  }
+
+  .content-pokemon {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-pokemon h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .content-pokemon .id p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .content-pokemon .imagem {
+    margin-bottom: 9px;
+  }
+  
+  .content-pokemon .imagem img {
+    max-width: 95%;
+    height: auto;
+  }
+  
+  .content-pokemon .info {
+    margin-bottom: 10px;
+  }
+  
+  .content-pokemon .height {
+    font-size: 18px;
+  }
+  
+  .type-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .type-box {
+    margin-right: 10px;
+  }
+  
+  .type {
+    display: inline-block;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #dadada;
+    border-radius: 10px;
+  }
+  
+  .type.normal {
+    background-color: #a8a878;
+  }
+  
+  .type.fighting {
+    background-color: #c03028;
+  }
+  
+  .type.flying {
+    background-color: #a890f0;
+  }
+  
+  .type.poison {
+    background-color: #a040a0;
+  }
+  
+  .type.ground {
+    background-color: #e0c068;
+  }
+  
+  .type.rock {background-color: #B8A038;
+    color: white;
+    }
+    
+    /* Estilo da lista de estatísticas */
+    ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    /* Estilo dos status do pokemon */
+    .status-poke {
+    border-bottom: 1px solid #f0e3e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+    
+    .name-status {
+    font-size: 1.2rem;
+    }
+        
+    .ataques {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    }
+
+    .ataques p {
+    margin-right: 0.5rem;
+    }
+    
+    /* Estilo da barra de progresso das estatísticas */
+    .progress {
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    }
+    
+    .progress.water {
+    background-color: #4C6ED9;
+    }
+    
+    .progress.fire {
+    background-color: #FB6C6C;
+    }
+    
+    .progress.grass {
+    background-color: #48D0B0;
+    }
+    
+    .progress.electric {
+    background-color: #FFCE4B;
+    }
+    
+    .progress.normal {
+    background-color: #A8A878;
+    }
+    
+    .progress.fighting {
+    background-color: #C03028;
+    }
+    
+    .progress.flying {
+    background-color: #A890F0;
+    }
+    
+    .progress.poison {
+    background-color: #A040A0;
+    }
+    
+    .progress.ground {
+    background-color: #E0C068;
+    }
+    
+    .progress.psychic {
+    background-color: #F85888;
+    }
+    
+    .progress.rock {
+    background-color: #B8A038;
+    }
+    
+    .progress.ice {
+    background-color: #98D8D8;
+    }
+    
+    .progress.bug {
+    background-color: #A8B820;
+    }
+    
+    .progress.dragon {
+    background-color: #7038F8;
+    }
+    
+    .progress.ghost {
+    background-color: #705898;
+    }
+    
+    .progress.dark {
+    background-color: #705848;
+    }
+    
+    .progress.steel {
+    background-color: #B8B8D0;
+    }
+    
+    .progress.fairy {
+    background-color: #EE99AC;
+    }
